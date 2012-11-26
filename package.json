@@ -1,6 +1,6 @@
 {
   "name": "seneca-dynamodb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An Amazon DynamoDB database layer for Seneca MVP framework.",
   "main": "lib/dynamodb-store.js",
   "dependencies": {
