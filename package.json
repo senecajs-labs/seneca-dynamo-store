@@ -1,10 +1,10 @@
 {
   "name": "seneca-dynamo-store",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An Amazon DynamoDB database layer for Seneca MVP framework.",
   "main": "lib/dynamodb-store.js",
   "dependencies": {
-    "seneca": "~0.4.2",
+    "seneca": "~0.5.9",
     "dynamodb": "~0.3.5",
     "underscore": "~1.4.2",
     "async": "~0.1.22",
@@ -26,6 +26,7 @@
     "plugin"
   ],
   "author": "Seamus D'Arcy",
+  "contributors": ["Peter Elger <elger.peter@gmail.com> (http://peterelger.com/)"],
   "license": "MIT",
   "readmeFilename": "README.md"
 }
