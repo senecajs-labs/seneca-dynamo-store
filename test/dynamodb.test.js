@@ -1,7 +1,7 @@
 /*jslint node: true */
 /*global describe:true, it:true, mocha:true*/
 /* Copyright (c) 2012 Seamus D'Arcy */
-/* These tests assume the existance of tables 'foo' and 'moon_bar' with hash key 'id' 
+/* These tests assume the existance of tables 'foo' and 'moon_bar' with hash key 'id'
  *
  * Run with
  * mocha  dynamodb.test.js --globals encoding
