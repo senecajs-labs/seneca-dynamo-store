@@ -10,8 +10,8 @@ Usage:
 
     var senecaConfig = {}
     var senecaDynamoDBStoreOpts = {
-      accessKeyId: 'ACCESSKEYID',
-      secretAccessKey: 'SECRETACCESSKEY',
+      keyid: 'ACCESSKEYID',
+      secret: 'SECRETACCESSKEY',
       endpoint: 'ENDPOINT'
     };
 

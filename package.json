@@ -7,6 +7,7 @@
     "seneca": "~0.5.9",
     "dynamodb": "~0.3.5",
     "underscore": "~1.4.2",
+    "node-logentries": "^0.1.4",
     "async": "~0.1.22",
     "node-uuid": "*"
   },
