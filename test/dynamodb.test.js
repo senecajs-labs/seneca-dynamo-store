@@ -4,14 +4,19 @@
 /* These tests assume the existance of tables 'foo' and 'moon_bar' with hash key 'id'
  *
  * Run with
- * mocha  dynamodb.test.js --globals encoding
+ * npm test
  */
 
 "use strict";
 
 var seneca = require('seneca');
-var shared = require('seneca/test/store/shared');
+var shared = require('seneca-store-test');
 var keys = require('./keys.mine.js');
+
+var lab = exports.lab = require('lab').script();
+var describe = lab.describe;
+var it = lab.it;
+
 var si = seneca();
 
 si.use(require('..'), {keyid: keys.id, secret: keys.secret, endpoint: keys.endpoint});
@@ -32,5 +37,3 @@ describe('dynamodb', function(){
     shared.closetest(si, testcount, done);
   });
 });
-
-
