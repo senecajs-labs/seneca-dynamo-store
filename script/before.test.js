@@ -31,14 +31,14 @@ ddb.tableExists = function(params, callback) {
 var tableFoo = {
     AttributeDefinitions: [ // Defining Primary Key
         {
-          AttributeName: 'order_id',
-          AttributeType: 'N'
+          AttributeName: 'id',
+          AttributeType: 'S'
         }
         // Define Secondary key here.
       ],
       KeySchema: [ // Defining Key Type Here.
         {
-          AttributeName: 'order_id',
+          AttributeName: 'id',
           KeyType: 'HASH'
         }
         // Define Secondary Key Type Here.
@@ -55,14 +55,14 @@ var tableFoo = {
 var tableMoonBar = {
     AttributeDefinitions: [ // Defining Primary Key
         {
-          AttributeName: 'order_id',
-          AttributeType: 'N'
+          AttributeName: 'id',
+          AttributeType: 'S'
         }
         // Define Secondary key here.
       ],
       KeySchema: [ // Defining Key Type Here.
         {
-          AttributeName: 'order_id',
+          AttributeName: 'id',
           KeyType: 'HASH'
         }
         // Define Secondary Key Type Here.
