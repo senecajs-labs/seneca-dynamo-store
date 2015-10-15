@@ -5,13 +5,14 @@
   "main": "lib/dynamodb-store.js",
   "scripts": {
     "pretest": "node script/before.test.js",
-    "test": "lab test/*.test.js -r console -v",
+    "test": "lab --globals __core-js_shared__ test/*.test.js -r console -v",
     "posttest": "node script/after.test.js"
   },
   "dependencies": {
-    "aws-sdk": "^2.2.2",
-    "lodash": "^3.10.0",
     "async": "^1.4.2",
+    "aws-sdk": "^2.2.2",
+    "dynamodb-marshaler": "^1.2.1",
+    "lodash": "^3.10.0",
     "node-uuid": "*"
   },
   "devDependencies": {
