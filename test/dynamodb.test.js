@@ -25,15 +25,6 @@ si.__testcount = 0;
 var testcount = 0;
 
 
-describe('dynamodb', function(){
-  it('basic', function(done){
-    this.timeout(0);
-    testcount++;
-    shared.basictest(si, done);
-  });
-
-  it('close', function(done){
-    this.timeout(0);
-    shared.closetest(si, testcount, done);
-  });
+describe('DynamoDB', function(){
+  shared.basictest({seneca:si, script:lab});
 });
