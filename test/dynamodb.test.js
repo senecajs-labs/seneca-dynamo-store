@@ -11,7 +11,12 @@
 
 var seneca = require('seneca');
 var shared = require('seneca-store-test');
-var keys = require('./keys.mine.js');
+var keys = {
+  id: process.env.AWS_KEY_ID || "EmptyKey",
+  secret: process.env.AWS_KEY_SECRET || "EmptySecret",
+  endpoint: process.env.AWS_KEY_ENDPOINT || "http://localhost:8000",
+  region: process.env.AWS_KEY_REGION || "eu-west-1"
+};
 
 var lab = exports.lab = require('lab').script();
 var describe = lab.describe;
