@@ -1,0 +1,6 @@
+node_modules
+.git
+.gitignore
+.DS_Store
+.travis.yml
+keys.mine.js
