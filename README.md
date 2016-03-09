@@ -34,6 +34,19 @@ seneca-dynamo-store is an [Amazon DynamoDB][dynamodb] database driver for the [S
 
 You will need to have an AWS account (obviously!).
 
+### Data Entities / Tables
+
+You will need to create a DynamoDB for each Data Entity you use in Seneca.
+They will not be created automatically.
+
+* Go to `https://console.aws.amazon.com/dynamodb/home`
+* Click **Create Table** (near the top)
+* The **Table Name** depends on how you create the Data Entity
+  * If you are using just the **name** - e.g. `seneca.make('foo')` - the table name will be just be `<name>`, e.g. **foo**
+  * If you are using a **base** and a **name** - `seneca.make('bar','foo')` -  the table name will be `<base>_<name>`, e.g **bar_foo**
+  * There is currently no support for Seneca **zones**: they are ignored
+* The **Primary Key** will always be **id**
+
 ### How to get Region and Endpoint
 
 * Go to `https://console.aws.amazon.com/dynamodb/home`
