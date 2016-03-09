@@ -30,11 +30,6 @@ seneca-dynamo-store is an [Amazon DynamoDB][dynamodb] database driver for the [S
     });
     ...
 
-## See Also
-
-* AWS [DynamoDB](http://aws.amazon.com/dynamodb)
-* [Seneca](http://senecajs.org/)
-
 ## Configuration
 
 You will need to have an AWS account (obviously!).
@@ -93,4 +88,7 @@ Still in the AWS IAM Console
 * Click radio box for **awsdynamodb_root** (the user we created earlier)
 * Press **Attach Policy** button (near bottom)
 
+[comment]: References
+[dynamodb]: http://aws.amazon.com/dynamodb
+[seneca]: http://senecajs.org/
 
