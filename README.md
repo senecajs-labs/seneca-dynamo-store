@@ -16,7 +16,7 @@ seneca-dynamo-store is an [Amazon DynamoDB][dynamodb] database driver for the [S
     var senecaDynamoDBStoreOpts = {
       accessKeyId: 'ACCESSKEYID',
       secretAccessKey: 'SECRETACCESSKEY',
-      endpoint: 'ENDPOINT',
+      // endpoint: 'ENDPOINT',
       region: 'REGION' // e.g. 'us-east-1'
     };
     
@@ -38,7 +38,10 @@ You will need to have an AWS account (obviously!).
 
 * Go to `https://console.aws.amazon.com/dynamodb/home`
 * The URL will be automatically be rewritten to add your Region, e.g. `https://console.aws.amazon.com/dynamodb/home?region=us-east-1`
-* Your **Endpoint** will be `https://dynamodb.us-east-1.amazonaws.com` e.g. `https://dynamodb.us-east-1.amazonaws.com`
+
+If you want, you can explicitly add your endpoint to the options. However, this is usually not necessary as the endpoint URL will automatically be constructed from the regin.
+
+* Your **Endpoint** will be `https://dynamodb.\<region\>.amazonaws.com` e.g. `https://dynamodb.us-east-1.amazonaws.com`
 
 ### How to get Access Keys
 
