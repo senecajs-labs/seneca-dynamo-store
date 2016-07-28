@@ -1,4 +1,5 @@
 ![SenecaLogo][]
+> A [Seneca.js][seneca] data storage plugin
 
 # seneca-dynamo-store
 
