@@ -1,5 +1,6 @@
-seneca-dynamo-store
-===================
+![SenecaLogo][]
+
+# seneca-dynamo-store
 
 seneca-dynamo-store is an [Amazon DynamoDB][dynamodb] database driver for the [Seneca][seneca] MVP toolkit.
 
@@ -88,7 +89,18 @@ Still in the AWS IAM Console
 * Click radio box for **awsdynamodb_root** (the user we created earlier)
 * Press **Attach Policy** button (near bottom)
 
+## Contributing
+
+The [Senecajs org][] encourage open participation. If you feel you can help in any way, be it with documentation, examples, extra testing, or new features please get in touch.
+
+## License
+
+Copyright Seamus D'Arcy and other contributors 2010 - 2016, Licensed under [MIT][].
+
 [comment]: References
 [dynamodb]: http://aws.amazon.com/dynamodb
 [seneca]: http://senecajs.org/
+[SenecaLogo]: https://camo.githubusercontent.com/4a0178ff2abf26f9214d4d98bc23eec356ced357/687474703a2f2f73656e6563616a732e6f72672f66696c65732f6173736574732f73656e6563612d6c6f676f2e706e67
+[Senecajs org]: https://github.com/senecajs/
+[MIT]: ./LICENSE.txt
 
