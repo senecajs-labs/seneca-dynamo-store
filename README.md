@@ -1,4 +1,4 @@
-![SenecaLogo][]
+![Seneca][SenecaLogo]
 > A [Seneca.js][seneca] data storage plugin
 
 # seneca-dynamo-store
@@ -21,7 +21,7 @@ seneca-dynamo-store is an [Amazon DynamoDB][dynamodb] database driver for the [S
       endpoint: 'ENDPOINT',
       region: 'REGION' // e.g. 'us-east-1'
     };
-    
+
     ...
 
     var si = seneca(senecaConfig);
@@ -49,9 +49,9 @@ You will need to have an AWS account (obviously!).
 * Press **Create New Users** (button on the top). This is optional but highly recommended
 * Enter a username, e.g. **awsdynamodb_root**. Make sure the "Generate Access Keys" box is selected
 * Press **Show User Security Credentials**
-* Store the "Access Key" and the "Secret Access Key" in a secure place. 
+* Store the "Access Key" and the "Secret Access Key" in a secure place.
   This is your only opportunity to get the Secret Access Key, so make sure you do this now.
-  
+
 You'll still need to create a Policy and attach it to the User you just created in order to be able to access DynamoDB.
 
 ### Create a DynamoDB Root Policy
@@ -101,7 +101,6 @@ Copyright Seamus D'Arcy and other contributors 2010 - 2016, Licensed under [MIT]
 [comment]: References
 [dynamodb]: http://aws.amazon.com/dynamodb
 [seneca]: http://senecajs.org/
-[SenecaLogo]: https://camo.githubusercontent.com/4a0178ff2abf26f9214d4d98bc23eec356ced357/687474703a2f2f73656e6563616a732e6f72672f66696c65732f6173736574732f73656e6563612d6c6f676f2e706e67
+[SenecaLogo]: http://senecajs.org/files/assets/seneca-logo.png
 [Senecajs org]: https://github.com/senecajs/
 [MIT]: ./LICENSE.txt
-
