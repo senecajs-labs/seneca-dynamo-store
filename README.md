@@ -18,8 +18,8 @@ seneca-dynamo-store is an [Amazon DynamoDB][dynamodb] database driver for the [S
     var senecaDynamoDBStoreOpts = {
       accessKeyId: 'ACCESSKEYID',
       secretAccessKey: 'SECRETACCESSKEY',
-      endpoint: 'ENDPOINT',
-      region: 'REGION' // e.g. 'us-east-1'
+      // endpoint: 'ENDPOINT', // optional if region specified
+      region: 'REGION'         // optional, e.g. 'us-east-1'
     };
 
     ...
@@ -36,11 +36,27 @@ seneca-dynamo-store is an [Amazon DynamoDB][dynamodb] database driver for the [S
 
 You will need to have an AWS account (obviously!).
 
+### Data Entities / Tables
+
+You will need to create a DynamoDB for each Data Entity you use in Seneca.
+They will not be created automatically.
+
+* Go to `https://console.aws.amazon.com/dynamodb/home`
+* Click **Create Table** (near the top)
+* The **Table Name** depends on how you create the Data Entity
+  * If you are using just the **name** - e.g. `seneca.make('foo')` - the table name will be just be `<name>`, e.g. **foo**
+  * If you are using a **base** and a **name** - `seneca.make('bar','foo')` -  the table name will be `<base>_<name>`, e.g **bar_foo**
+  * There is currently no support for Seneca **zones**: they are ignored
+* The **Primary Key** will always be **id**
+
 ### How to get Region and Endpoint
 
 * Go to `https://console.aws.amazon.com/dynamodb/home`
 * The URL will be automatically be rewritten to add your Region, e.g. `https://console.aws.amazon.com/dynamodb/home?region=us-east-1`
-* Your **Endpoint** will be `https://dynamodb.us-east-1.amazonaws.com` e.g. `https://dynamodb.us-east-1.amazonaws.com`
+
+If you want, you can explicitly add your endpoint to the options. However, this is usually not necessary as the endpoint URL will automatically be constructed from the regin.
+
+* Your **Endpoint** will be `https://dynamodb.<region>.amazonaws.com` e.g. `https://dynamodb.us-east-1.amazonaws.com`
 
 ### How to get Access Keys
 
