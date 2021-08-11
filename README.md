@@ -5,6 +5,9 @@
 
 seneca-dynamo-store is an [Amazon DynamoDB][dynamodb] database driver for the [Seneca][seneca] MVP toolkit.
 
+| ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
+|---|---|
+
 ## Installation
 
 	npm install --save seneca-dynamo-store
